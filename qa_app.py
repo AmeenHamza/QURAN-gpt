@@ -181,7 +181,7 @@ def main():
     st.sidebar.title("Menu")
     
     embedding_option = st.sidebar.radio(
-        "Choose Questions", ["About Quran"])
+        "Choose Embeddings", ["OpenAI Embeddings"])
     retriever_type = st.sidebar.selectbox(
         "Choose Retriever", ["SIMILARITY SEARCH", "SUPPORT VECTOR MACHINES"])
 
