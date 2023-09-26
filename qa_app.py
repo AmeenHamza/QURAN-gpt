@@ -16,7 +16,7 @@ from langchain.callbacks.base import CallbackManager
 from langchain.embeddings import HuggingFaceEmbeddings
 
 
-st.set_page_config(page_title="Quran Gpt",page_icon=':shark:')
+st.set_page_config(page_title="Quran Gpt", page_icon='📖')
 
 @st.cache_data
 def load_docs(files):
@@ -168,7 +168,7 @@ def main():
         """,
         unsafe_allow_html=True,
     )
-    st.sidebar.image("img/logo_.png")
+    st.sidebar.image("img/quran.png")
    
     st.write(
     f"""
@@ -181,7 +181,7 @@ def main():
     st.sidebar.title("Menu")
     
     embedding_option = st.sidebar.radio(
-        "Choose Embeddings", ["OpenAI Embeddings"])
+        "Choose Questions", ["About Quran"])
     retriever_type = st.sidebar.selectbox(
         "Choose Retriever", ["SIMILARITY SEARCH", "SUPPORT VECTOR MACHINES"])
 
